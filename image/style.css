@@ -143,7 +143,7 @@ body {
 /*Home page*/
 
 #hero {
-    background-image: url(hero4.png);
+    background-image: url("hero4.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -314,7 +314,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("b2.jpg");
+    background-image: url("banner/b2.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -357,7 +357,7 @@ body {
     justify-content: center;
     align-items: flex-start;
 
-    background-image: url("b17.jpg");
+    background-image: url("banner/b17.jpg");
     min-width: 580px;
     height: 50vh;
     background-size: cover;
@@ -366,7 +366,7 @@ body {
 }
 
 #sm-banner .banner-box2 {
-    background-image: url("b10.jpg");
+    background-image: url("banner/b10.jpg");
 }
 
 
@@ -406,7 +406,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("b7.jpg");
+    background-image: url("banner/b7.jpg");
     min-width: 30%;
     height: 30vh;
     background-size: cover;
@@ -416,11 +416,11 @@ body {
 }
 
 #banner3 .banner-box2 {
-    background-image: url("b4q.jpg");
+    background-image: url("banner/b4.jpg");
 }
 
 #banner3 .banner-box3 {
-    background-image: url("b18.jpg");
+    background-image: url("banner/b18.jpg");
 }
 
 #banner3 h2 {
@@ -444,7 +444,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url("b14.png");
+    background-image: url("banner/b14.png");
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: #041e42;
@@ -557,7 +557,7 @@ footer .copyright {
 
 /* shop page */
 #page-header {
-    background-image: url(b1.jpg);
+    background-image: url("banner/b1.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -592,6 +592,8 @@ footer .copyright {
 }
 
 /* ṣingle product */
+
+
 #prodetails {
     display: flex;
     margin-top: 20px;
@@ -655,7 +657,83 @@ footer .copyright {
 
 
 
-/* media page */
+/* Blog Page */
+
+
+
+#page-header.blog-header {
+    background-image: url("banner/b19.jpg");
+}
+
+#blog {
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+#blog .blog-img {
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .blog-details {
+    width: 50%;
+
+}
+
+#blog .blog-details a {
+    text-decoration: none;
+    font-size: 11px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+
+#blog .blog-details a::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+}
+
+#blog .blog-details a:hover {
+    color: #088178;
+}
+
+#blog .blog-details a:hover::after {
+    background-color: #088178;
+}
+
+#blog .blog-box h1 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -9;
+}
+
+
+
+
+/* start media query */
 @media (max-width:799px) {
     .section-p1 {
         padding: 40px 40px;
@@ -847,5 +925,30 @@ footer .copyright {
     #prodetails .single-pro-details {
         width: 100%;
 
+    }
+
+
+    /* Blog Page */
+
+
+    #blog {
+        padding: 100px 20px 0 20px;
+    }
+
+    #blog .blog-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    #blog .blog-img {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    #blog .blog-details {
+        width: 100%;
     }
 }
